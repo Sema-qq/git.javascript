@@ -54,7 +54,15 @@
     <div id="display"></div>
     <input type="button" method="post" value="Купить" name="done" id="done"/>
 </form>
-
+<!--перебирать элементы и записывать в них что то -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var href = $('.side_menu_wrap ul li a').attr('href')+'#page-content';
+		$('.side_menu_wrap ul li a').each(function(){
+			$(this).attr('href')+href;
+		});
+	});
+</script>
 
 
 </body>
