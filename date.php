@@ -26,3 +26,10 @@
 		} else { $("#dell").prop('disabled',true); }
 	}
 </script>
+<?php 
+
+	//прибавить к дате +1 день (или больше)
+	$date2 = strtotime($date2);
+        $date2 = date('Y-m-d', ($date2+86400));
+
+?>
