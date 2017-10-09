@@ -4,7 +4,7 @@
 	var curr_day = d.getDate();
 	var curr_month = d.getMonth() + 1;
 	var curr_year = d.getFullYear();
-	var curr_date = curr_day + "." + (curr_month < 10 ? '0' : '') + curr_month + "." + curr_year;
+	var curr_date = (curr_day < 10 ? '0' : '') + curr_day + "." + (curr_month < 10 ? '0' : '') + curr_month + "." + curr_year;
 
 	//document.write(curr_date);
   
