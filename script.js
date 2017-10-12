@@ -17,4 +17,5 @@ var _emv = _emv || [];
     em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
   })();
-
+//если надо получить после слеша, до слеша значение
+window.location.pathname.split('/')[1]
