@@ -19,3 +19,11 @@ var _emv = _emv || [];
   })();
 //если надо получить после слеша, до слеша значение
 window.location.pathname.split('/')[1]
+
+
+//не даем ничего ввводить в текстовое поле, нужно для валидации датапикеров через required
+$(document).ready(function() {
+  $('.selector').on('input',function() {
+    $(this).val('');
+  });
+});
