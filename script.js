@@ -27,3 +27,10 @@ $(document).ready(function() {
     $(this).val('');
   });
 });
+
+//удалить всё что не в тегах после элемента
+$(document).ready(function(){
+    $("h2.carttitle").each(function () {
+        this.nextSibling.parentNode.removeChild(this.nextSibling);
+    });
+});
