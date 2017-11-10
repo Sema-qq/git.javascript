@@ -36,3 +36,18 @@
 		});
 	});
 </script>
+
+<!-- перебирать имг и менять у них атрибут срк -->
+$("img").each(function(){
+	$(this).css("width", "100%");
+    $(this).css("height", "auto");
+    var src = $(this).attr("src");
+	var pos = src.indexOf("/uploads/images/");	
+		if (-1 < pos) {
+			src = "http://prugina.pro"+src;
+			$(this).attr("src", src);
+			alert($(this).attr("src"));
+			
+		}
+	
+});
