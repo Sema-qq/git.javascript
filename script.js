@@ -34,3 +34,9 @@ $(document).ready(function(){
         this.nextSibling.parentNode.removeChild(this.nextSibling);
     });
 });
+
+//обрезать строку как на пхп
+function splitString(stringToSplit, separator) {
+    var arrayOfStrings = stringToSplit.split(separator);
+    return arrayOfStrings[1];
+}
