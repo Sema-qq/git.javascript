@@ -40,3 +40,8 @@ function splitString(stringToSplit, separator) {
     var arrayOfStrings = stringToSplit.split(separator);
     return arrayOfStrings[1];
 }
+
+//формирование url
+ var url = window.location.protocol + '//'
+        + window.location.host
+        + window.location.pathname;
